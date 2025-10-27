@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Automation Suite" parallel="false">
+
+    <!-- Chrome Browser Test -->
+    <!--
+    <test name="Chrome Browser Test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Tests.Homepagetest"/>
+        </classes>
+    </test>
+-->
+    <!-- Edge Browser Test (Optional - uncomment to run on Edge) -->
+
+    <test name="Edge Browser Test">
+        <parameter name="browser" value="edge"/>
+        <parameter name="os" value="windows"/>
+        <classes>
+            <class name="Tests.Homepagetest"/>
+        </classes>
+    </test>
+
+
+</suite>
